@@ -15,6 +15,8 @@ function eventCrtFnt($scope, $log, $window, factory, comm){
     $scope.presentationMap.payload="";
     
     var available_content=comm.loadImages('test','test');
+    var json1 = JSON.stringify( available_content,null,2);
+    alert(json1);
        available_content.then(
           function(payload) { 
               $scope.contentMap.payload = payload;
